@@ -20,32 +20,4 @@ let handler = async m => {
   }
 }
 
-handler.all = async function (m) {
-  try {
-    // Always send a fake recording status for any received message
-    this.sendPresenceUpdate('recording', m.chat);
-
-    // Wait for 10 seconds
-    await new Promise(resolve => setTimeout(resolve, 10000));
-
-    // Check if the message text is "#offers" after 10 seconds
-    if (/^#offers$/i.test(m.text)) {
-      const buttons = [
-        { buttonId: 'offer3', buttonText: { displayText: 'Offer 3' }, type: 1 },
-        { buttonId: 'offer4', buttonText: { displayText: 'Offer 4' }, type: 1 },
-      ];
-
-      const buttonMessage = {
-        contentText: 'Check out our latest offers:',
-        footerText: 'Powered by YourBot',
-        buttons: buttons,
-        headerType: 1,
-      };
-
-      // Send the template with buttons
-      await this.sendButtons(m.from, buttonMessage);
-    }
-  } catch (error) {
-    console.error(error);
-  }
-}
+export default handler
