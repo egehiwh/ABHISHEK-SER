@@ -49,7 +49,7 @@ global.APIKeys = { // APIKey Here
 // Sticker WM
 global.botname = '𝙼𝚘𝚑𝚊𝚖𝚎𝚍 𝚂𝚊𝚕𝚎𝚖'
 global.premium = 'true'
-global.packname = '𝙼𝚘𝚑𝚊𝚖𝚎𝚍 𝚂𝚊𝚕𝚎𝚖🎯𝙼𝚘𝚑𝚊𝚖𝚎𝚍 𝚂𝚊𝚕𝚎𝚖☘️' 
+global.packname = '⌯Dev' 
 global.author = '𝙼𝚘𝚑𝚊𝚖𝚎𝚍 𝚂𝚊𝚕𝚎𝚖' 
 global.igfg = '▢ Follow on Instagram\nhttps://www.instagram.com/abhishek_ser\n' 
 global.dygp = 'https://chat.whatsapp.com/BOLb0ICN3sAJ5dloRBw5VD'
