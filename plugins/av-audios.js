@@ -7,7 +7,7 @@ handler.all = async function (m) {
     this.sendFile(m.chat, av, 'audio.mp3', null, m, true, { type: 'audioMessage', ptt: true })
    }
 
-  if (/^bgm$/i.test(m.text) ) {
+  if (/^بحبك$/i.test(m.text) ) {
     let av = './src/mp3/bgm.mp3'
     this.sendFile(m.chat, av, 'audio.mp3', null, m, true, { type: 'audioMessage', ptt: true })
    }
